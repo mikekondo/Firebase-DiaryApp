@@ -9,11 +9,12 @@
 /* Begin PBXBuildFile section */
 		95247CD4287404C500D1E4A4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95247CD3287404C500D1E4A4 /* AppDelegate.swift */; };
 		95247CD6287404C500D1E4A4 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95247CD5287404C500D1E4A4 /* SceneDelegate.swift */; };
-		95247CD8287404C500D1E4A4 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95247CD7287404C500D1E4A4 /* ViewController.swift */; };
 		95247CDB287404C500D1E4A4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 95247CD9287404C500D1E4A4 /* Main.storyboard */; };
 		95247CDD287404C600D1E4A4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 95247CDC287404C600D1E4A4 /* Assets.xcassets */; };
 		95247CE0287404C600D1E4A4 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 95247CDE287404C600D1E4A4 /* LaunchScreen.storyboard */; };
 		95247CE8287406CA00D1E4A4 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 95247CE7287406CA00D1E4A4 /* GoogleService-Info.plist */; };
+		95247D31287510D600D1E4A4 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95247D30287510D600D1E4A4 /* LoginViewController.swift */; };
+		95247D332875145900D1E4A4 /* AnswerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95247D322875145900D1E4A4 /* AnswerViewController.swift */; };
 		C2F968D20D5FD5C9511A2B49 /* Pods_Firebase_DiaryApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8F4DD3A0ECF50220E3FE5B0B /* Pods_Firebase_DiaryApp.framework */; };
 /* End PBXBuildFile section */
 
@@ -23,12 +24,13 @@
 		95247CD0287404C500D1E4A4 /* Firebase-DiaryApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Firebase-DiaryApp.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		95247CD3287404C500D1E4A4 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		95247CD5287404C500D1E4A4 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		95247CD7287404C500D1E4A4 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		95247CDA287404C500D1E4A4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		95247CDC287404C600D1E4A4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		95247CDF287404C600D1E4A4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		95247CE1287404C600D1E4A4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		95247CE7287406CA00D1E4A4 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		95247D30287510D600D1E4A4 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		95247D322875145900D1E4A4 /* AnswerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnswerViewController.swift; sourceTree = "<group>"; };
 		9F536230B3ECF83EC0105640 /* Pods-Firebase-DiaryApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Firebase-DiaryApp.debug.xcconfig"; path = "Target Support Files/Pods-Firebase-DiaryApp/Pods-Firebase-DiaryApp.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -75,7 +77,8 @@
 			children = (
 				95247CD3287404C500D1E4A4 /* AppDelegate.swift */,
 				95247CD5287404C500D1E4A4 /* SceneDelegate.swift */,
-				95247CD7287404C500D1E4A4 /* ViewController.swift */,
+				95247D30287510D600D1E4A4 /* LoginViewController.swift */,
+				95247D322875145900D1E4A4 /* AnswerViewController.swift */,
 				95247CD9287404C500D1E4A4 /* Main.storyboard */,
 				95247CDC287404C600D1E4A4 /* Assets.xcassets */,
 				95247CDE287404C600D1E4A4 /* LaunchScreen.storyboard */,
@@ -210,7 +213,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				95247CD8287404C500D1E4A4 /* ViewController.swift in Sources */,
+				95247D332875145900D1E4A4 /* AnswerViewController.swift in Sources */,
+				95247D31287510D600D1E4A4 /* LoginViewController.swift in Sources */,
 				95247CD4287404C500D1E4A4 /* AppDelegate.swift in Sources */,
 				95247CD6287404C500D1E4A4 /* SceneDelegate.swift in Sources */,
 			);
