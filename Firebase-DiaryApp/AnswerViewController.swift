@@ -6,10 +6,13 @@
 //
 
 import UIKit
+import Firebase
+import FirebaseAuth
 
 class AnswerViewController: UIViewController {
 
-    @IBOutlet var userNameLabel: UILabel!
+    @IBOutlet private var userNameLabel: UILabel!
+    @IBOutlet private var answerTextView: UITextView!
 
     var userName: String = ""
 
@@ -24,4 +27,19 @@ class AnswerViewController: UIViewController {
         }
         userNameLabel.text = "\(userName)さんようこそ！"
     }
+
+    @IBAction func didTapLogoutButton(_ sender: Any) {
+        logout()
+        dismiss(animated: true)
+    }
+
+    private func logout(){
+        do {
+            try Auth.auth().signOut()
+        }
+        catch let error as NSError{
+            print(error)
+        }
+    }
+
 }
