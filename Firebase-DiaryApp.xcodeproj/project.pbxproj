@@ -15,6 +15,7 @@
 		95247CE8287406CA00D1E4A4 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 95247CE7287406CA00D1E4A4 /* GoogleService-Info.plist */; };
 		95247D31287510D600D1E4A4 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95247D30287510D600D1E4A4 /* LoginViewController.swift */; };
 		95247D332875145900D1E4A4 /* AnswerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95247D322875145900D1E4A4 /* AnswerViewController.swift */; };
+		957EBD0B2876A20A00A13872 /* PKHUD in Frameworks */ = {isa = PBXBuildFile; productRef = 957EBD0A2876A20A00A13872 /* PKHUD */; };
 		C2F968D20D5FD5C9511A2B49 /* Pods_Firebase_DiaryApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8F4DD3A0ECF50220E3FE5B0B /* Pods_Firebase_DiaryApp.framework */; };
 /* End PBXBuildFile section */
 
@@ -40,6 +41,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				C2F968D20D5FD5C9511A2B49 /* Pods_Firebase_DiaryApp.framework in Frameworks */,
+				957EBD0B2876A20A00A13872 /* PKHUD in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -115,6 +117,9 @@
 			dependencies = (
 			);
 			name = "Firebase-DiaryApp";
+			packageProductDependencies = (
+				957EBD0A2876A20A00A13872 /* PKHUD */,
+			);
 			productName = "Firebase-DiaryApp";
 			productReference = 95247CD0287404C500D1E4A4 /* Firebase-DiaryApp.app */;
 			productType = "com.apple.product-type.application";
@@ -143,6 +148,9 @@
 				Base,
 			);
 			mainGroup = 95247CC7287404C500D1E4A4;
+			packageReferences = (
+				957EBD092876A20A00A13872 /* XCRemoteSwiftPackageReference "PKHUD" */,
+			);
 			productRefGroup = 95247CD1287404C500D1E4A4 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -436,6 +444,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		957EBD092876A20A00A13872 /* XCRemoteSwiftPackageReference "PKHUD" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/pkluz/PKHUD";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		957EBD0A2876A20A00A13872 /* PKHUD */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 957EBD092876A20A00A13872 /* XCRemoteSwiftPackageReference "PKHUD" */;
+			productName = PKHUD;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 95247CC8287404C500D1E4A4 /* Project object */;
 }
