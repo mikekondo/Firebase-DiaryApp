@@ -5,8 +5,6 @@
 //  Created by 近藤米功 on 2022/07/06.
 //
 
-// UserDefalutsにAnswersのドキュメントパスを保存
-// Answersにはユーザ名、answerTextView、日付を保存する
 
 import UIKit
 import Firebase
@@ -14,7 +12,7 @@ import FirebaseAuth
 import FirebaseFirestore
 import PKHUD
 
-class AnswerViewController: UIViewController {
+final class AnswerViewController: UIViewController {
 
     @IBOutlet private var userNameLabel: UILabel!
     @IBOutlet private var answerTextView: UITextView!
@@ -34,6 +32,7 @@ class AnswerViewController: UIViewController {
 
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
+        navigationController?.isNavigationBarHidden = true
         if UserDefaults.standard.object(forKey: "nameKey") != nil {
             userName = UserDefaults.standard.object(forKey: "nameKey") as! String
         }
@@ -44,14 +43,18 @@ class AnswerViewController: UIViewController {
         loadOdaiText()
     }
 
-    @IBAction func didTapAnswerSendButton(_ sender: Any) {
+    @IBAction private func didTapAnswerSendButton(_ sender: Any) {
         sendAnswerTextView()
         HUD.flash(.success, delay: 1)
     }
 
-    @IBAction func didTapLogoutButton(_ sender: Any) {
+    @IBAction private func didTapLogoutButton(_ sender: Any) {
         logout()
         dismiss(animated: true)
+    }
+
+    @IBAction func didTapCheckAnswerButton(_ sender: Any) {
+        performSegue(withIdentifier: "checkViewSegue", sender: nil)
     }
 
     private func logout(){
@@ -61,6 +64,7 @@ class AnswerViewController: UIViewController {
         catch let error as NSError{
             print(error)
         }
+        dismiss(animated: true)
     }
 
     private func loadOdaiText(){
